@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendation</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Music Recommendation</h1>
+        <form id="recommendationForm">
+            <div class="form-group">
+                <label for="genre">Select Genre:</label>
+                <select id="genre">
+                    <option value="telugu">Telugu</option>
+                    <option value="malayalam">Malayalam</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="tamil">Tamil</option>
+                    <option value="english">English</option>
+                    <option value="korean">Korean</option>
+                    <option value="japanese">Japanese</option>
+                    <option value="french">French</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="german">German</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mood">Select Mood:</label>
+                <select id="mood">
+                    <option value="happy">Happy</option>
+                    <option value="sad">Sad</option>
+                    <option value="party">Party</option>
+                    <option value="chill">Chill</option>
+                    <option value="energetic">Energetic</option>
+                    <option value="calm">Calm</option>
+                    <option value="romantic">Romantic</option>
+                    <option value="motivational">Motivational</option>
+                    <option value="melancholy">Melancholy</option>
+                    <option value="upbeat">Upbeat</option>
+                </select>
+            </div>
+            <input type="submit" value="Get Recommendations">
+        </form>
+        <div class="song-list" id="songList">
+            <!-- Recommended songs will be displayed here -->
+        </div>
+    </div>
+    <script src="static/js/scripts.js"></script>
+</body>
+</html>
